@@ -15,15 +15,16 @@ class MyApp extends StatelessWidget {
       
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: Colors.red
+        primarySwatch: Colors.deepPurple,
+        
        
       ),
       darkTheme: ThemeData(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
       ),
-      initialRoute: "/Home",
+     
       routes: {
-       "/" :(context) => HomePage(),
+       "/" :(context) => LoginPage(),
        "/Login": (context) => LoginPage(),
        "/Home" : (context) => HomePage()
       },
